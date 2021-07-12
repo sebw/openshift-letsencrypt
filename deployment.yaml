@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app
+  namespace: demo-letsencrypt
+spec:
+  selector:
+    matchLabels:
+      name: demo-backend
+  template:
+    metadata:
+      labels:
+        name: demo-backend
+    spec:
+      containers:
+        - name: backend
+          image: registry.access.redhat.com/rhscl/httpd-24-rhel7:latest
+          ports:
+            - containerPort: 8080
