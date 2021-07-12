@@ -4,7 +4,7 @@ metadata:
   name: letsencrypt-prod
 spec:
   acme:
-    email: swains@redhat.com
+    email: YOUREMAIL@EXAMPLE.ORG
     privateKeySecretRef:
       name: prod-issuer-account-key
     server: https://acme-v02.api.letsencrypt.org/directory

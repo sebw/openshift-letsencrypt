@@ -10,9 +10,9 @@ spec:
   tls:
     - secretName: demo-tls
       hosts:
-        - demo.apps.ocp4.redhat.arrowlabs.be
+        - YOUR.URL.EXAMPLE.ORG
   rules:
-  - host: demo.apps.ocp4.redhat.arrowlabs.be
+  - host: YOUR.URL.EXAMPLE.ORG
     http:
       paths:
         - path: /
